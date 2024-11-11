@@ -68,8 +68,16 @@ def hello_aaron():
         "Protect the flame of your spirit, for only you can",
         "May the forest guide you to the still waters of wisdom"
     ]
+    
+    images = [
+        "https://drx-danwins.us-east-1.linodeobjects.com/drx-danwins/new_file11112024_51_47aaron.png",
+        "https://drx-danwins.us-east-1.linodeobjects.com/drx-danwins/new_file11112024_40_33aaron4.png",
+        "https://drx-danwins.us-east-1.linodeobjects.com/drx-danwins/new_file11112024_40_42aaron2.png"
+    ]
+
+    image = random.choice(images)
 
     blessing = random.choice(blessings)
 
-    return render_template("index.html", blessing=blessing)
+    return render_template("index.html", blessing=blessing, image=image)
 
